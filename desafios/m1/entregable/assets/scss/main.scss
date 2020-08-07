@@ -1,0 +1,15 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'layout/banner';
+@import 'layout/content';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/pagination';
+@import 'layout/profile';
+html {
+    background-color: magenta;
+}
