@@ -1,0 +1,26 @@
+.header {
+    background-color: $eerieblack-color;
+    height: 60px;
+}
+
+#logo {
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 80px;
+}
+
+.navigation {
+    display: inline-block;
+}
+
+.navigation__list {
+    position: absolute;
+    right: 0;
+}
+
+.navigation__item {
+    margin-left: 15px;
+    color: $white-color;
+    font-family: $roboto-font-family;
+    font-size: $font-size-x-small;
+}

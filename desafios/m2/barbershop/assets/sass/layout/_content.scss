@@ -1,0 +1,14 @@
+.content {
+    font-family: $roboto-font-family;
+    font-size: $font-size-x-small;
+    margin: 5px 30px;
+    color: $nickel-color;
+}
+
+.buttons__rounded {
+    background-color: $nickel-color;
+    color: $white-color;
+    font-size: $font-size-x-small !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
