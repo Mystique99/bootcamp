@@ -1,0 +1,30 @@
+/* Reset*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  margin-right: 40px;
+}
+
+.icon {
+  margin-left: 15px;
+}
+
+.profile__avatar {
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */
