@@ -8,6 +8,13 @@ img {
   max-width: 100%;
 }
 
+.banner {
+  background: url("/assets/img/image-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -23,8 +30,32 @@ img {
   margin-left: 15px;
 }
 
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.profile__info {
+  display: flex;
+}
+
+.profile__text {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile__text p {
+  margin: 0;
+}
+
 .profile__avatar {
   border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
 
 /*# sourceMappingURL=main.css.map */
