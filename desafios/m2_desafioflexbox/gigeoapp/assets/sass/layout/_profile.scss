@@ -25,3 +25,12 @@
     width: 80px;
     height: 80px;
 }
+
+#profile_name {
+    font-weight: $font-weight-700;
+    font-size: $font-size-large;
+}
+
+#followers {
+    color: $nickel-color;
+}

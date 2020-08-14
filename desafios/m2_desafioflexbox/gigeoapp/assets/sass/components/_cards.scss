@@ -1,0 +1,19 @@
+.content_card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card_image {
+    height: 200px;
+    width: 300px;
+}
+
+.card_title {
+    font-weight: $font-weight-800;
+    font-size: $font-size-medium;
+}
+
+.card_description {
+    color: $nickel-color;
+}

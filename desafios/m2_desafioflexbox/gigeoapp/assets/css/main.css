@@ -1,3 +1,8 @@
+html,
+body {
+  max-width: 100%;
+}
+
 /* Reset*/
 body {
   margin: 0;
@@ -13,6 +18,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 150px;
+  width: 100%;
 }
 
 .header {
@@ -56,6 +62,35 @@ img {
   border-radius: 50%;
   width: 80px;
   height: 80px;
+}
+
+#profile_name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#followers {
+  color: #6c6e70;
+}
+
+.content_card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card_image {
+  height: 200px;
+  width: 300px;
+}
+
+.card_title {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.card_description {
+  color: #6c6e70;
 }
 
 /*# sourceMappingURL=main.css.map */
