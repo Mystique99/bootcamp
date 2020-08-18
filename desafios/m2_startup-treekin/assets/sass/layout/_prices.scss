@@ -1,0 +1,12 @@
+.prices {
+    background: url('/assets/img/bg-price.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}

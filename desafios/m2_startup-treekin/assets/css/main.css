@@ -1,0 +1,54 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #221d23;
+  padding: 20px;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+}
+
+.link {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.copyright {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices {
+  background: url("/assets/img/bg-price.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=main.css.map */
