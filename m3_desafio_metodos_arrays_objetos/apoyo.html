@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./arrays_objetos.js"></script>
+    <title>Centro Médico Ñuñoa</title>
+</head>
+<script>
+    document.write('<p>Estadisticas centro medico ñuñoa</p>');
+
+
+
+    //Agregar código para el desafio 2 aquí
+
+    dental.map(function(paciente) {
+        return document.write(paciente.hora + '-' + paciente.especialista + '-' + paciente.paciente + '-' + paciente.rut + '-' + paciente.prevision + '<br>')
+    })
+
+    document.write('Listado de Pacientes General <br>')
+    traumatologia.map(function(paciente) {
+        return document.write(paciente.paciente + '<br>')
+    })
+
+    radiologia.map(function(paciente) {
+        return document.write(paciente.paciente + '<br>')
+    })
+
+    dental.map(function(paciente) {
+        return document.write(paciente.paciente + '<br>')
+    })
+
+    //Agregar código para el desafio 2 aquí
+
+    document.write(`<p>Cantidad de atenciones para Radiología: ${radiologia.length}</p>`);
+    document.write(`<p>Cantidad de atenciones para Traumatología: ${traumatologia.length}</p>`);
+    document.write(`<p>Cantidad de atenciones para Dental: ${dental.length}</p>`);
+
+
+    document.write(`<p>Primera atencion: ${radiologia[0].paciente} - ${radiologia[0].prevision} | Última atención: ${radiologia[radiologia.length -1].paciente} - ${radiologia[radiologia.length -1].prevision}.</p>`);
+    document.write(`<p>Primera atencion: ${traumatologia[0].paciente} - ${traumatologia[0].prevision} | Última atención: ${traumatologia[traumatologia.length -1].paciente} - ${traumatologia[traumatologia.length -1].prevision}.</p>`);
+    document.write(`<p>Primera atencion: ${dental[0].paciente} - ${dental[0].prevision} | Última atención: ${dental[dental.length -1].paciente} - ${dental[dental.length -1].prevision}.</p>`);
+</script>
+
+<body>
+
+</body>
+
+</html>
