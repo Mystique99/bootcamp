@@ -1,97 +1,125 @@
-function init() {
-    // var uno = document.getElementById('uno').innerHTML
-    // var dos = document.getElementById('dos').innerHTML
-    // var tres = document.getElementById('tres').innerHTML
-    // var cuatro = document.getElementById('cuatro').innerHTML
-    // var cinco = document.getElementById('cinco').innerHTML
-    // var seis = document.getElementById('seis').innerHTML
-    // var siete = document.getElementById('siete').innerHTML
-    // var ocho = document.getElementById('ocho').innerHTML
-    // var nueve = document.getElementById('nueve').innerHTML
-    // var cero = document.getElementById('cero').innerHTML
-    // var igual = document.getElementById('igual').innerHTML
-    // var reset = document.getElementById('reset').innerHTML
-    // var suma = document.getElementById('suma').innerHTML
-    // var resta = document.getElementById('resta').innerHTML
-    // var multiplicacion = document.getElementById('multiplicacion').innerHTML
-    // var division = document.getElementById('division').innerHTML
-
-
-
-}
+let operandoa;
+let operandob;
+let operacion;
 
 
 
 function botonuno(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '1';
 }
 
 function botondos(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '2';
 }
 
 function botontres(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '3';
 }
 
 function botoncuatro(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '4';
 }
 
 function botoncinco(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '5';
 }
 
 function botonseis(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '6';
 }
 
 function botonsiete(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '7';
 }
 
 function botonocho(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '8';
 }
 
 function botonnueve(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '9';
 }
 
 function botoncero(numero) {
-    var resultado = document.getElementById('resultado').innerHTML;
-    var sumado = document.getElementById(numero).innerHTML;
-    document.getElementById('resultado').innerHTML = resultado + sumado;
+    var resultado = document.getElementById('resultado');
+    resultado.textContent = resultado.textContent + '0';
 }
 
 function botonreset() {
     document.getElementById('resultado').innerHTML = '';
 }
 
-function resultado() {
-    var resultado = document.getElementById('resultado').innerHTML;
-    parseInt(resultado);
-    var suma = document.getElementById('suma').innerHTML;
-    var resta = document.getElementById('resta').innerHTML;
-    if (suma === '+') {
-        resultado += resultado;
+function suma() {
+    operandoa = resultado.innerHTML;
+    operacion = "+";
+    limpiar();
+
+}
+
+function resta() {
+    operandoa = resultado.innerHTML;
+    operacion = "-";
+    limpiar();
+}
+
+function multiplicacion() {
+    operandoa = resultado.innerHTML;
+    operacion = "*";
+    limpiar();
+
+}
+
+function division() {
+    operandoa = resultado.innerHTML;
+    operacion = "/";
+    limpiar();
+
+}
+
+igual.onclick = function(e) {
+    operandob = resultado.innerHTML;
+    resolver();
+}
+
+function limpiar() {
+    resultado.innerHTML = "";
+}
+
+function reset() {
+    resultado.innerHTML = "";
+    operandoa = 0;
+    operandob = 0;
+    operancion = "";
+}
+
+
+function resolver() {
+    let res = 0;
+    switch (operacion) {
+        case '+':
+            res = parseInt(operandoa) + parseInt(operandob);
+            break;
+        case '-':
+            res = parseInt(operandoa) - parseInt(operandob);
+            break;
+        case '*':
+            res = parseInt(operandoa) * parseInt(operandob);
+            break;
+        case '/':
+            res = parseInt(operandoa) / parseInt(operandob);
+            break;
+        default:
+            break;
     }
+    reset();
+    resultado.textContent = res;
 }
