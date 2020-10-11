@@ -1,0 +1,1 @@
+(()=>{var e=[{name:"Jack",age:50},{name:"Michael",age:9},{name:"John",age:40},{name:"Ann",age:19},{name:"Elisabeth",age:16}].some((function(e){return e.age>10&&e.age<20}));console.log("There are teenagers:",e),document.getElementById("mensaje").innerHTML="There are teenagers:"+e})();

@@ -1,125 +1,142 @@
-let operandoa;
-let operandob;
-let operacion;
+// let operandoa;
+// let operandob;
+// let operacion;
 
 
 
-function botonuno(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '1';
-}
+// function botonuno(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '1';
+// }
 
-function botondos(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '2';
-}
+// function botondos(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '2';
+// }
 
-function botontres(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '3';
-}
+// function botontres(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '3';
+// }
 
-function botoncuatro(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '4';
-}
+// function botoncuatro(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '4';
+// }
 
-function botoncinco(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '5';
-}
+// function botoncinco(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '5';
+// }
 
-function botonseis(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '6';
-}
+// function botonseis(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '6';
+// }
 
-function botonsiete(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '7';
-}
+// function botonsiete(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '7';
+// }
 
-function botonocho(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '8';
-}
+// function botonocho(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '8';
+// }
 
-function botonnueve(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '9';
-}
+// function botonnueve(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '9';
+// }
 
-function botoncero(numero) {
-    var resultado = document.getElementById('resultado');
-    resultado.textContent = resultado.textContent + '0';
-}
+// function botoncero(numero) {
+//     var resultado = document.getElementById('resultado');
+//     resultado.textContent = resultado.textContent + '0';
+// }
 
-function botonreset() {
-    document.getElementById('resultado').innerHTML = '';
-}
+// function botonreset() {
+//     document.getElementById('resultado').innerHTML = '';
+// }
 
-function suma() {
-    operandoa = resultado.innerHTML;
-    operacion = "+";
-    limpiar();
+// function suma() {
+//     operandoa = resultado.innerHTML;
+//     operacion = "+";
+//     limpiar();
 
-}
+// }
 
-function resta() {
-    operandoa = resultado.innerHTML;
-    operacion = "-";
-    limpiar();
-}
+// function resta() {
+//     operandoa = resultado.innerHTML;
+//     operacion = "-";
+//     limpiar();
+// }
 
-function multiplicacion() {
-    operandoa = resultado.innerHTML;
-    operacion = "*";
-    limpiar();
+// function multiplicacion() {
+//     operandoa = resultado.innerHTML;
+//     operacion = "*";
+//     limpiar();
 
-}
+// }
 
-function division() {
-    operandoa = resultado.innerHTML;
-    operacion = "/";
-    limpiar();
+// function division() {
+//     operandoa = resultado.innerHTML;
+//     operacion = "/";
+//     limpiar();
 
-}
+// }
 
-igual.onclick = function(e) {
-    operandob = resultado.innerHTML;
-    resolver();
-}
+// igual.onclick = function(e) {
+//     operandob = resultado.innerHTML;
+//     resolver();
+// }
 
-function limpiar() {
-    resultado.innerHTML = "";
-}
+// function limpiar() {
+//     resultado.innerHTML = "";
+// }
 
-function reset() {
-    resultado.innerHTML = "";
-    operandoa = 0;
-    operandob = 0;
-    operancion = "";
-}
+// function reset() {
+//     resultado.innerHTML = "";
+//     operandoa = 0;
+//     operandob = 0;
+//     operancion = "";
+// }
 
 
-function resolver() {
-    let res = 0;
-    switch (operacion) {
-        case '+':
-            res = parseInt(operandoa) + parseInt(operandob);
-            break;
-        case '-':
-            res = parseInt(operandoa) - parseInt(operandob);
-            break;
-        case '*':
-            res = parseInt(operandoa) * parseInt(operandob);
-            break;
-        case '/':
-            res = parseInt(operandoa) / parseInt(operandob);
-            break;
-        default:
-            break;
-    }
-    reset();
-    resultado.textContent = res;
-}
+// function resolver() {
+//     let res = 0;
+//     switch (operacion) {
+//         case '+':
+//             res = parseInt(operandoa) + parseInt(operandob);
+//             break;
+//         case '-':
+//             res = parseInt(operandoa) - parseInt(operandob);
+//             break;
+//         case '*':
+//             res = parseInt(operandoa) * parseInt(operandob);
+//             break;
+//         case '/':
+//             res = parseInt(operandoa) / parseInt(operandob);
+//             break;
+//         default:
+//             break;
+//     }
+//     reset();
+//     resultado.textContent = res;
+// }
+
+
+
+
+// var numero = 8;
+// for (i = 1; i <= 10; i++) {
+//     var resultado = numero * i;
+//     console.log(numero + " " + " x " + " " + i + " = " + resultado + "<br>");
+// }
+
+// const a = ["Blanco", "Rojo", "Azul"];
+// let b = '';
+// for (x of a) {
+//     b += x + ' ';
+
+// }
+// console.log(b);
