@@ -2,10 +2,13 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <p v-text="globalOpen"></p>
+    <button @click="toggleOpen">Cambiar estado</button>
     <p v-text="globalSales"></p>
     <ul>
       <li v-for="product in availableProducts" :key="product.id"> 
-        {{product.nombre}}
+        {{product.nombre}} -{{product.stock}}
+        <button @click="addStock(product)">Agregar Stock </button>
+        <button @click="removeStock(product)">Remover Stock </button>
       </li>
     </ul>
     <ul>
@@ -24,7 +27,7 @@
 </template>
 
 <script>
-import {mapState, mapGetters} from "vuex"
+import {mapState, mapGetters, mapActions} from "vuex"
 
 export default {
   name: 'App',
@@ -33,6 +36,9 @@ export default {
       search_id: "",
       }
     },
+  methods:{
+    ...mapActions(["toggleOpen","addStock", "removeStock"]),
+  },
   computed: {
     ...mapState(["open", "sales"]),
     ...mapGetters(["availableProducts", "onSaleProducts", "searchById"]),
